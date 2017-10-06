@@ -1,8 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 body {
   background: #fff;
   font-family: "Open Sans", Sans-serif;
@@ -11,6 +6,7 @@ body {
 .contenedor {
   width: 90%;
   max-width: 1000px;
+  margin: auto;
   overflow: hidden; }
 
 header {
@@ -18,18 +14,18 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 600px; }
-  header .contenedor .menu {
+  header .menu {
     margin: 40px 0;
     text-align: right; }
-    header .contenedor .menu a {
+    header .menu a {
       margin: 0 20px;
       color: #fff;
       padding-bottom: 9px;
       text-decoration: none;
       border-bottom: 2px solid transparent;
       font-size: 1em; }
-    header .contenedor .menu:hover {
-      border-bottom: 2px solid #fff; }
+      header .menu a:hover {
+        border-bottom: 2px solid #fff; }
   header .contenedor-texto {
     display: flex;
     justify-content: center;
@@ -133,20 +129,34 @@ footer .contacto {
     footer .contacto .formulario input[type="email"] {
       width: 49%;
       margin-bottom: 15px; }
+    footer .contacto .formulario input[type="text"],
+    footer .contacto .formulario input[type="email"],
     footer .contacto .formulario textarea {
       border: 2px solid #cecece;
       border-radius: 5px;
       padding: 15px 20px;
       font-size: 20px;
       color: #a4a4a4; }
-  footer .contacto .boton {
-    background: #3895ea;
-    color: #fff;
-    border-radius: 3px;
-    padding: 15px 40px;
-    cursor: pointer; }
-    footer .contacto .boton:hover {
-      background: #387bea; }
+      footer .contacto .formulario input[type="text"]:focus,
+      footer .contacto .formulario input[type="email"]:focus,
+      footer .contacto .formulario textarea:focus {
+        border: 2px solid #3895ea; }
+    footer .contacto .formulario textarea {
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 100px;
+      max-height: 300px;
+      margin-bottom: 15px; }
+    footer .contacto .formulario .boton {
+      background: #3895ea;
+      color: #fff;
+      border-radius: 3px;
+      padding: 15px 40px;
+      cursor: pointer; }
+      footer .contacto .formulario .boton:hover {
+        background: #387bea; }
 footer .redes-sociales {
   background: #1e2b38;
   padding: 60px 0; }
@@ -172,5 +182,21 @@ footer .git:hover {
   background: #6e5494; }
 footer .ins:hover {
   background: #405de6; }
+
+@media screen and (max-width: 800px) {
+  header .menu {
+    text-align: center; }
+
+  .main .trabajos .contenedor-trabajos .trabajo {
+    width: 46%; } }
+@media screen and (max-width: 800px) {
+  header .contenedor-texto .texto .profesion {
+    font-size: 18px; }
+  header .contenedor-texto .texto .nombre {
+    font-size: 35px; }
+
+  .redes-sociales .contenedor {
+    flex-wrap: wrap;
+    padding: 20px 0; } }
 
 /*# sourceMappingURL=syles.css.map */
