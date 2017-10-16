@@ -58,3 +58,71 @@ body
 					border-bottom: $borde solid $error
 					+ label
 						color: $error
+			label
+				color: $primary
+				&.label
+					position: absolute
+					top: 16px
+					left: 0
+					font-size: 16px
+					line-height: 16px
+					margin-left: 16px
+					-webkit-transition: all .3s ease
+					-o-transition: all .3s ease
+					transition: all .3s ease
+					&.active
+						top: -12px
+						font-size: 12px
+						line-height: 12px
+						color: $divider
+			&.checkbox label,
+			&.radio label
+				display: inline-block
+				cursor: pointer
+				color: $primary
+				position: relative
+				padding: 5px 15px 5px 51px
+				font-size: 1em
+				border-right: 3px
+				-webkit-transition: all .3s ease
+				-o-transition: all .3s ease
+				transition: all .3s ease
+				&:hover
+					background: rgba($light-primary, 1)
+				&:before
+					content: ""
+					width: 17px
+					height: 17px
+					position: absolute
+					left: 15px
+					border-radius: 50%
+					background: none
+					border: $borde solid $primary
+			&.error
+				label
+					color: $error
+					&:hover
+						background: rgba($error, 1)
+					&:before
+						border: $borde solid $error
+			&.radio
+				input[type="radio"]
+					display: none
+					&:checked + label:before
+						display: none
+					&:checked + label
+						padding: 5px 15px
+						background: $primary
+						border-radius: $borde
+						color: $white
+			&.checkbox
+				label:before
+					border-radius: 3px
+				input[type="checkbox"]
+					display: none
+					&:checked + label:before
+						display: none
+					&:checked + label
+						background: $primary
+						color: $white
+						padding: 5px

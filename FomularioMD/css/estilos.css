@@ -54,5 +54,69 @@ body {
           .contenedor-formulario .formulario .input-group input[type="email"].error + label,
           .contenedor-formulario .formulario .input-group input[type="password"].error + label {
             color: #D32F2F; }
+      .contenedor-formulario .formulario .input-group label {
+        color: #303F9F; }
+        .contenedor-formulario .formulario .input-group label.label {
+          position: absolute;
+          top: 16px;
+          left: 0;
+          font-size: 16px;
+          line-height: 16px;
+          margin-left: 16px;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+          .contenedor-formulario .formulario .input-group label.label.active {
+            top: -12px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #B6B6B6; }
+      .contenedor-formulario .formulario .input-group.checkbox label, .contenedor-formulario .formulario .input-group.radio label {
+        display: inline-block;
+        cursor: pointer;
+        color: #303F9F;
+        position: relative;
+        padding: 5px 15px 5px 51px;
+        font-size: 1em;
+        border-right: 3px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .contenedor-formulario .formulario .input-group.checkbox label:hover, .contenedor-formulario .formulario .input-group.radio label:hover {
+          background: #bbdefb; }
+        .contenedor-formulario .formulario .input-group.checkbox label:before, .contenedor-formulario .formulario .input-group.radio label:before {
+          content: "";
+          width: 17px;
+          height: 17px;
+          position: absolute;
+          left: 15px;
+          border-radius: 50%;
+          background: none;
+          border: 2px solid #303F9F; }
+      .contenedor-formulario .formulario .input-group.error label {
+        color: #D32F2F; }
+        .contenedor-formulario .formulario .input-group.error label:hover {
+          background: #d32f2f; }
+        .contenedor-formulario .formulario .input-group.error label:before {
+          border: 2px solid #D32F2F; }
+      .contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+        display: none; }
+        .contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label:before {
+          display: none; }
+        .contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked + label {
+          padding: 5px 15px;
+          background: #303F9F;
+          border-radius: 2px;
+          color: #F2F2F2; }
+      .contenedor-formulario .formulario .input-group.checkbox label:before {
+        border-radius: 3px; }
+      .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"] {
+        display: none; }
+        .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label:before {
+          display: none; }
+        .contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked + label {
+          background: #303F9F;
+          color: #F2F2F2;
+          padding: 5px; }
 
 /*# sourceMappingURL=estilos.css.map */
