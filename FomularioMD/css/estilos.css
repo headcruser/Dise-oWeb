@@ -118,5 +118,22 @@ body {
           background: #303F9F;
           color: #F2F2F2;
           padding: 5px; }
+    .contenedor-formulario .formulario input[type="submit"] {
+      background: #303F9F;
+      border-radius: 1px;
+      border: 2px solid #F2F2F2;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      padding: 15px;
+      width: 100%;
+      font-family: "Roboto", Arial;
+      font-size: 16px;
+      -webkit-trasnsition: all 0.3s ease;
+      -moz-trasnsition: all 0.3s ease;
+      -ms-trasnsition: all 0.3s ease;
+      -o-trasnsition: all 0.3s ease; }
+      .contenedor-formulario .formulario input[type="submit"]:hover {
+        background: #1976D2; }
 
 /*# sourceMappingURL=estilos.css.map */
